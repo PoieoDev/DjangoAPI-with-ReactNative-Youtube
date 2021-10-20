@@ -12,11 +12,14 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/stack": "^6.0.11",
+    "@unimodules/core": "^7.1.2",
+    "expo-secure-store": "^10.2.0",
     "react": "17.0.2",
     "react-native": "0.66.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-safe-area-context": "^3.3.2",
-    "react-native-screen": "^1.0.1"
+    "react-native-screen": "^1.0.1",
+    "react-native-unimodules": "^0.14.8"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

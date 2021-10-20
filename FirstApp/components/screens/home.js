@@ -6,7 +6,7 @@ import fonts from "../styles/fonts.js"
 import buttons from "../styles/buttons.js"
 
 
-function Landing({ navigation, route, props }){
+function Home({ navigation, route, props }){
 
   const globalContext = useContext(Context)
   const { isLoggedIn, appSettings } = globalContext;
@@ -14,10 +14,8 @@ function Landing({ navigation, route, props }){
   return(
     <View style={containers(appSettings).outerPage}>
       <Text style={fonts(appSettings).h1}>Hello User!</Text>
+      <Text style={fonts(appSettings).h1}>YOU ARE HOME</Text>
       <Text style={fonts(appSettings).p}>You are {(isLoggedIn)? '' : "Not "}logged in</Text>
-      <TouchableOpacity style={buttons(appSettings).login} onPress={() => navigation.navigate("Login")}>
-        <Text>Login</Text>
-      </TouchableOpacity>
     </View>
   )
 
@@ -25,4 +23,4 @@ function Landing({ navigation, route, props }){
 
 }
 
-export default Landing;
+export default Home;
