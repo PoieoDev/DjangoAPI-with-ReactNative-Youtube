@@ -6,6 +6,7 @@ import { Context } from "../globalContext/globalContext.js"
 
 import Landing from '../screens/landing.js'
 import Login from '../screens/login.js'
+import Register from '../screens/register.js'
 import Home from '../screens/home.js'
 
 const Stack = createStackNavigator();
@@ -21,6 +22,7 @@ function Navigator(props) {
       <>
       <Stack.Screen name="Landing" component={Landing} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+      <Stack.Screen name="Register" component={Register} options={{ headerShown: false }} />
       </>
       :
       <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
