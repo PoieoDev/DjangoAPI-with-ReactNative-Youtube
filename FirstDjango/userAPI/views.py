@@ -15,9 +15,6 @@ import hashlib
 from .models import Token
 # Create your views here.
 
-#asHE8soHSAOzPzMVXqFluA
-#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
-
 
 class TestView(APIView):
     def get(self, request, format=None):
@@ -56,7 +53,7 @@ class UserView(APIView):
                     )
 
                 try:
-                    sg = SendGridAPIClient("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")
+                    sg = SendGridAPIClient("<<SENDGRID API KEY>>")
                     response = sg.send(message)
 
                     return Response(user_serializer.data, status=200)
